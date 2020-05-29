@@ -1,10 +1,10 @@
 import React from 'react';
-import { Nav } from './components/Nav';
+import LandingPage from './pages/LandingPage.js';
 
 function App() {
 	return (
-		<div className="mx-64 mt-32">
-			<Nav />
+		<div className="">
+			<LandingPage />
 		</div>
 	);
 }

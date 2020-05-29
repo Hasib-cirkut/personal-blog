@@ -8,7 +8,7 @@ export const Nav = () => {
 				<p className="ml-10">Blogs</p>
 			</div>
 
-			<img src="/pp.jpg" alt="" className="rounded-full w-10 h-10" />
+			<img src="/pp.jpg" alt="" className="rounded-full w-10 h-10 ml-6" />
 
 			<div className="flex flex-row">
 				<p>About</p>
