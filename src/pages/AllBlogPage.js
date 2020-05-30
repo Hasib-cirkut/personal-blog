@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as contentful from 'contentful';
+import { Nav } from '../components/Nav';
+import AllBlogCard from '../components/AllBlogCard';
 
 const AllBlogPage = () => {
 	const [ blogs, setBlogs ] = useState([]);
@@ -20,9 +22,13 @@ const AllBlogPage = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
-			<ul>{blogs.map((blog) => <li>{blog.fields.title}</li>)}</ul>
-		</React.Fragment>
+		<div className="mx-64 mt-32 flex flex-col">
+			<Nav />
+
+			<div className="flex flex-wrap justify-center mt-8 ">
+				{blogs.map((blog) => <AllBlogCard title={blog.fields.title} subtitle={blog.fields.subtitle} />)}
+			</div>
+		</div>
 	);
 };
 
