@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import * as contentful from 'contentful';
+import { Contentful } from './contentful';
 import { Nav } from '../components/Nav';
 import AllBlogCard from '../components/AllBlogCard';
+
+import { useRecoilState } from 'recoil';
+
+import { blogState } from './atom.js';
 
 const AllBlogPage = () => {
 	const [ blogs, setBlogs ] = useState([]);
 
+	const [ blogRe, setBlogRe ] = useRecoilState(blogState);
+
 	useEffect(() => {
 		async function getData() {
-			let client = await contentful.createClient({
-				space: process.env.REACT_APP_SPACE,
-				accessToken: process.env.REACT_APP_ACCESS_TOKEN
-			});
+			let client = await Contentful();
 
 			let entries = await client.getEntries();
 
-			setBlogs(entries.items);
+			await setBlogRe(entries.items);
+
+			await setBlogs(entries.items);
 		}
 
 		getData();
@@ -26,7 +31,15 @@ const AllBlogPage = () => {
 			<Nav />
 
 			<div className="flex flex-wrap justify-center mt-8 ">
-				{blogs.map((blog) => <AllBlogCard title={blog.fields.title} subtitle={blog.fields.subtitle} />)}
+				{blogRe.map((blog) => (
+					<AllBlogCard
+						key={blog.sys.id}
+						id={blog.sys.id}
+						title={blog.fields.title}
+						subtitle={blog.fields.subtitle}
+						body={blog.fields.body}
+					/>
+				))}
 			</div>
 		</div>
 	);
