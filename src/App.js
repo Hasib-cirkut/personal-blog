@@ -1,10 +1,10 @@
 import React from 'react';
 import LandingPage from './pages/LandingPage.js';
 import AllBlogPage from './pages/AllBlogPage.js';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BlogPage from './pages/BlogPage.js';
 
-import { RecoilRoot, atom } from 'recoil';
+import { RecoilRoot } from 'recoil';
 
 function App() {
 	return (
@@ -12,11 +12,11 @@ function App() {
 			<Router>
 				<Switch>
 					<Route path="/" exact>
-						<AllBlogPage />
+						<LandingPage />
 					</Route>
 
-					<Route path="/home" exact>
-						<LandingPage />
+					<Route path="/blogs" exact>
+						<AllBlogPage />
 					</Route>
 
 					<Route path="/blogs/:id" exact>

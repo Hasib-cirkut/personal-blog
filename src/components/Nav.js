@@ -5,11 +5,11 @@ export const Nav = () => {
 	return (
 		<div className="flex md:flex-row justify-between md:align-bottom md:font-semibold text-blue-700">
 			<div className="flex flex-row w-full justify-around">
-				<Link to="/home">
+				<Link to="/">
 					<p>Home</p>
 				</Link>
 
-				<Link to="/">
+				<Link to="/blogs">
 					<p className="">Blogs</p>
 				</Link>
 			</div>

@@ -9,14 +9,14 @@ function LandingPage() {
 
 			<div className="flex flex-row justify-center mt-24">
 				<a href="https://www.facebook.com/adib.hasib.7">
-					<img src="/icon_facebook.png" alt="icon facebook" className="h-6 w-6 rounded-full mx-12" />
+					<img src="/icon_facebook.png" alt="icon facebook" className="h-8 w-8 rounded-full mx-12" />
 				</a>
 
 				<a href="https://github.com/Hasib-cirkut">
-					<img src="/icon_github.png" alt="icon facebook" className="h-6 w-6 rounded-full" />
+					<img src="/icon_github.png" alt="icon facebook" className="h-8 w-8 rounded-full" />
 				</a>
 
-				<img src="/icon_linkedin.png" alt="icon facebook" className="h-6 w-6 rounded-full mx-12" />
+				<img src="/icon_linkedin.png" alt="icon facebook" className="h-8 w-8 rounded-full mx-12" />
 			</div>
 
 			<div className="flex flex-row justify-center mt-20 text-5xl">
