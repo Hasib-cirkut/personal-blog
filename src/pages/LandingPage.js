@@ -4,7 +4,7 @@ import BlogCard from '../components/BlogCard';
 
 function LandingPage() {
 	return (
-		<div className="mx-64 mt-32 flex flex-col">
+		<div className="md:mx-64 md:mt-32 flex flex-col h-full mt-8 mx-4">
 			<Nav />
 
 			<div className="flex flex-row justify-center mt-24">
@@ -23,7 +23,7 @@ function LandingPage() {
 				<h1>Hi</h1>
 			</div>
 
-			<div className="flex flex-row justify-center mt-6 text-lg mx-64 px-24 text-center font-light tracking-tight">
+			<div className="flex flex-row justify-center mt-6 text-lg md:mx-64 md:px-24 text-center font-light tracking-tight">
 				<p>
 					I am Hasib. Programmer, tech enthusiast, newbie blogger. Into Reactive programming, Data Science and
 					Machine learning. I am currently doing my undergrad at East West university.
@@ -34,7 +34,7 @@ function LandingPage() {
 				<p>Recent Blogs</p>
 			</div>
 
-			<div className="flex flex-row mt-12 justify-between px-48">
+			<div className="flex md:flex-row sm:flex-col mt-12 justify-between md:px-48 sm:px-8">
 				<BlogCard title="Programming with C" subtitle="Chapter 1" />
 				<BlogCard title="Programming with C" subtitle="Chapter 2" />
 				<BlogCard title="Programming with C" subtitle="Chapter 3" />

@@ -27,10 +27,10 @@ const AllBlogPage = () => {
 	}, []);
 
 	return (
-		<div className="mx-64 mt-32 flex flex-col">
+		<div className="md:mx-64 md:mt-32 flex flex-col h-full mt-8 mx-4">
 			<Nav />
 
-			<div className="flex flex-wrap justify-center mt-8 ">
+			<div className="flex flex-col md:flex-wrap md:flex-row justify-center mt-8 h-full">
 				{blogRe.map((blog) => (
 					<AllBlogCard
 						key={blog.sys.id}

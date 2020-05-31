@@ -33,11 +33,11 @@ const BlogPage = () => {
 	}, []);
 
 	return (
-		<div className="mx-64 mt-32 flex flex-col">
+		<div className="md:mx-64 md:mt-32 flex flex-col h-full mt-8 mx-4">
 			<Nav />
-			<div className="mt-24 px-24 font-mono">
-				<div className="text-4xl font-bold">{title}</div>
-				<div className="text-base font-light mt-4">{subtitle}</div>
+			<div className="mt-12 md:mt-24 md:px-24 font-mono">
+				<div className="text-2xl text-center md:text-4xl font-bold">{title}</div>
+				<div className="text-base text-center font-light mt-4">{subtitle}</div>
 				<div dangerouslySetInnerHTML={getMarkdown(body)} className="mt-10" />`
 			</div>
 		</div>
