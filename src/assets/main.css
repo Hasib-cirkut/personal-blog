@@ -592,6 +592,30 @@ h3 {
   font-size: 1.125rem;
 }
 
+code {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity))
+}
+
+ul{
+  margin-left: 1.5rem
+}
+
+li{
+  list-style-type: disc;
+}
+
+@font-face {
+  font-family: 'SiyamRupali';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('SiyamRupali'), local('SiyamRupali-Regular'), url('./Siyam\ Rupali\ ANSI.ttf');
+}
+
 .container {
   width: 100%;
 }

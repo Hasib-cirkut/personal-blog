@@ -12,6 +12,27 @@ h3 {
 	@apply text-lg;
 }
 
+code {
+    @apply bg-gray-100
+}
+
+ul{
+	@apply ml-6
+}
+
+li{
+	@apply list-disc;
+
+}
+
+
+@font-face {
+	font-family: 'SiyamRupali';
+	font-style: normal;
+	font-weight: 400;
+	src: local('SiyamRupali'), local('SiyamRupali-Regular'), url('./Siyam\ Rupali\ ANSI.ttf');
+}
+
 @tailwind components;
 
 @tailwind utilities;
