@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Nav = () => {
 	return (
-		<div className="flex md:flex-row justify-between md:align-bottom md:font-semibold text-blue-700">
+		<div className="flex md:flex-row justify-between  md:font-semibold text-blue-700 text-lg">
 			<div className="flex flex-row w-full justify-around">
 				<Link to="/">
 					<p>Home</p>
@@ -14,7 +14,7 @@ export const Nav = () => {
 				</Link>
 			</div>
 
-			<img src="/pp.jpg" alt="" className="rounded-full w-10 h-10 md:ml-6" />
+			<img src="/pp.jpg" alt="" className="rounded-full w-10 h-10" />
 
 			<div className="flex flex-row w-full justify-around">
 				<p>About</p>

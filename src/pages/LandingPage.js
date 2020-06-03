@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav } from '../components/Nav';
-import BlogCard from '../components/BlogCard';
+import TagCard from '../components/TagCard';
 
 function LandingPage() {
 	return (
@@ -31,13 +31,13 @@ function LandingPage() {
 			</div>
 
 			<div className="flex flex-row justify-center mt-12 text-xl font-semibold">
-				<p>Recent Blogs</p>
+				<p>Popular Tags</p>
 			</div>
 
-			<div className="flex md:flex-row sm:flex-col mt-12 justify-between md:px-48 sm:px-8">
-				<BlogCard title="Programming with C" subtitle="Chapter 1" />
-				<BlogCard title="Programming with C" subtitle="Chapter 2" />
-				<BlogCard title="Programming with C" subtitle="Chapter 3" />
+			<div className="flex md:flex-row sm:flex-col mt-12 justify-around md:px-48 sm:px-8">
+				<TagCard title="C" />
+				<TagCard title="Javascript" />
+				<TagCard title="Java" />
 			</div>
 		</div>
 	);
