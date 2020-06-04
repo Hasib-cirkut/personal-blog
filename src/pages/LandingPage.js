@@ -33,12 +33,6 @@ function LandingPage() {
 			<div className="flex flex-row justify-center mt-12 text-xl font-semibold">
 				<p>Popular Tags</p>
 			</div>
-
-			<div className="flex md:flex-row sm:flex-col mt-12 justify-around md:px-48 sm:px-8">
-				<TagCard title="C" />
-				<TagCard title="Javascript" />
-				<TagCard title="Java" />
-			</div>
 		</div>
 	);
 }
