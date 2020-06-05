@@ -12,19 +12,21 @@ h3 {
 	@apply text-lg;
 }
 
-code {
-    @apply bg-gray-100
+pre {
+	@apply bg-blue-100;
+	@apply px-2;
+	@apply py-4;
+	@apply border-l-4;
+	@apply border-pink-600;
 }
 
-ul{
-	@apply ml-6
+ul {
+	@apply ml-6;
 }
 
-li{
+li {
 	@apply list-disc;
-
 }
-
 
 @font-face {
 	font-family: 'SiyamRupali';

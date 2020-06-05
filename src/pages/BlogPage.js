@@ -3,10 +3,12 @@ import marked from 'marked';
 import { Nav } from '../components/Nav';
 import { useParams } from 'react-router-dom';
 import { Contentful } from './contentful';
-import {dateConverter} from '../utils/dateConverter.js'
+import { dateConverter } from '../utils/dateConverter.js';
 
 function getMarkdown(body) {
 	let md = marked(body, { smartypants: true });
+
+	//console.log(md);
 
 	return { __html: md };
 }
@@ -24,7 +26,7 @@ const BlogPage = () => {
 
 			let entry = await client.getEntry(id);
 
-			console.log(entry)
+			console.log(entry);
 
 			setTitle(entry.fields.title);
 			setSubTitle(entry.fields.subtitle);
@@ -33,8 +35,6 @@ const BlogPage = () => {
 		}
 
 		getData();
-
-
 	}, []);
 
 	return (

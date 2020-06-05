@@ -592,17 +592,25 @@ h3 {
   font-size: 1.125rem;
 }
 
-code {
+pre {
   --bg-opacity: 1;
-  background-color: #f7fafc;
-  background-color: rgba(247, 250, 252, var(--bg-opacity))
+  background-color: #ebf8ff;
+  background-color: rgba(235, 248, 255, var(--bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-left-width: 4px;
+  --border-opacity: 1;
+  border-color: #d53f8c;
+  border-color: rgba(213, 63, 140, var(--border-opacity));
 }
 
-ul{
-  margin-left: 1.5rem
+ul {
+  margin-left: 1.5rem;
 }
 
-li{
+li {
   list-style-type: disc;
 }
 
