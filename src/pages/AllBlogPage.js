@@ -2,17 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Contentful } from './contentful';
 import { Nav } from '../components/Nav';
 import AllBlogCard from '../components/AllBlogCard';
-import TagCard from '../components/TagCard';
-
-import { useRecoilState } from 'recoil';
-
-import { blogState } from './atom.js';
 
 const AllBlogPage = () => {
 	const [ blogs, setBlogs ] = useState([]);
 	const [ tag, setTag ] = useState('C');
-
-	const [ blogRe, setBlogRe ] = useRecoilState(blogState);
 
 	useEffect(
 		() => {
@@ -23,8 +16,6 @@ const AllBlogPage = () => {
 					content_type: 'blogPost',
 					'fields.tag': tag
 				});
-
-				await setBlogRe(entries.items);
 
 				await setBlogs(entries.items);
 			}
@@ -61,7 +52,7 @@ const AllBlogPage = () => {
 			</div>
 
 			<div className="flex flex-col md:flex-wrap md:flex-row justify-center mt-8 h-full">
-				{blogRe.map((blog) => (
+				{blogs.map((blog) => (
 					<AllBlogCard
 						key={blog.sys.id}
 						id={blog.sys.id}

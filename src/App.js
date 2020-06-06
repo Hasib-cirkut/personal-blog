@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BlogPage from './pages/BlogPage.js';
 
 import { RecoilRoot } from 'recoil';
+import { themeState } from './atoms/themeAtom';
 
 function App() {
 	return (
