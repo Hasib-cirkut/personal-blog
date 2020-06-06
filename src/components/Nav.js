@@ -40,8 +40,8 @@ export const Nav = () => {
 
 			<div className="flex flex-row w-full justify-around cursor-pointer">
 				<p>About</p>
-				<p className="" onClick={toogleTheme}>
-					{theme}
+				<p className={theme === 'light' ? 'text-black' : 'text-white'} onClick={toogleTheme}>
+					{theme === 'light' ? 'Dark' : 'Light'}
 				</p>
 			</div>
 		</div>
