@@ -38,10 +38,13 @@ export const Nav = () => {
 
 			<img src="/pp.jpg" alt="" className="rounded-full w-10 h-10" />
 
-			<div className="flex flex-row w-full justify-around cursor-pointer">
+			<div className="flex flex-row w-full justify-around">
 				<p>About</p>
 				<Link>
-					<p className={theme === 'light' ? 'text-black' : 'text-white'} onClick={toogleTheme}>
+					<p
+						className={theme === 'light' ? 'text-black' : 'text-white' + ' cursor-pointer'}
+						onClick={toogleTheme}
+					>
 						{theme === 'light' ? 'Dark' : 'Light'}
 					</p>
 				</Link>

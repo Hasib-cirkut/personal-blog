@@ -39,23 +39,23 @@ const AllBlogPage = () => {
 				<div
 					className={
 						'flex md:flex-row sm:flex-col mt-12 justify-around md:px-48 sm:px-8 ' +
-						(theme === 'dark' && 'text-black')
+						(theme === 'dark' ? 'text-white' : 'text-black')
 					}
 				>
 					<button
-						className="border-b-2 border-blue-700 bg-blue-300 px-4 py-1 rounded-lg"
+						className="border border-yellow-400 border-b-4 hover:border-yellow-500  px-6 py-1 rounded-sm"
 						onClick={() => setTag('C')}
 					>
 						C
 					</button>
 					<button
-						className="border-b-2 border-blue-700 bg-blue-300 px-4 py-1 rounded-lg"
+						className="border border-yellow-400 border-b-4 hover:border-yellow-500  px-6 py-1 rounded-sm"
 						onClick={() => setTag('Javascript')}
 					>
 						Javascript
 					</button>
 					<button
-						className="border-b-2 border-blue-700 bg-blue-300 px-4 py-1 rounded-lg"
+						className="border border-yellow-400 border-b-4 hover:border-yellow-500  px-6 py-1 rounded-sm"
 						onClick={() => setTag('Java')}
 					>
 						Java

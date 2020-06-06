@@ -11,7 +11,7 @@ const AllBlogCard = ({ title, subtitle, id }) => {
 	return (
 		<div
 			className={
-				'h-auto w-full md:w-1/2 p-8 mt-2 md:mx-2 rounded-sm hover:shadow-md cursor-pointer ' +
+				'h-auto w-full md:w-1/2 p-8 mt-2 md:mx-2 rounded-sm hover:shadow-md_dark cursor-pointer ' +
 				(theme === 'light' ? 'bg-gray-300' : 'bg-gray-700')
 			}
 		>
