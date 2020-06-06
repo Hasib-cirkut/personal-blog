@@ -5,6 +5,12 @@ import { useParams } from 'react-router-dom';
 import { Contentful } from './contentful';
 import { dateConverter } from '../utils/dateConverter.js';
 
+import { useRecoilValue } from 'recoil';
+
+import { themeState } from '../atoms/themeAtom.js';
+
+//TODO: add theme support in this page
+
 function getMarkdown(body) {
 	let md = marked(body, { smartypants: true });
 
@@ -36,6 +42,8 @@ const BlogPage = () => {
 	const [ createdAt, setCreatedAt ] = useState('');
 	const [ body, setBody ] = useState('');
 
+	const theme = useRecoilValue(themeState);
+
 	useEffect(() => {
 		async function getData() {
 			let client = await Contentful();
@@ -54,13 +62,15 @@ const BlogPage = () => {
 	}, []);
 
 	return (
-		<div className="md:mx-64 md:mt-32 flex flex-col h-full mt-8 mx-4 pb-8">
-			<Nav />
-			<div className="mt-12 md:mt-24 md:px-24 font-mono">
-				<div className="text-2xl text-center md:text-4xl font-bold">{title}</div>
-				<div className="text-base text-center font-light mt-4">{subtitle}</div>
-				<div className="text-xl text-center font-light mt-4">{createdAt}</div>
-				<div dangerouslySetInnerHTML={getMarkdown(body)} className="mt-10" />
+		<div className={'md:pt-32 pt-8 ' + (theme === 'light' ? `text-black` : 'text-gray-500 bg-gray-900')}>
+			<div className="md:mx-64 flex flex-col mx-4 pb-8">
+				<Nav />
+				<div className="md:pt-24 md:px-24 font-mono">
+					<div className="text-2xl text-center md:text-4xl font-bold">{title}</div>
+					<div className="text-base text-center font-light mt-4">{subtitle}</div>
+					<div className="text-xl text-center font-light mt-4">{createdAt}</div>
+					<div dangerouslySetInnerHTML={getMarkdown(body)} className="mt-10" />
+				</div>
 			</div>
 		</div>
 	);

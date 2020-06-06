@@ -1,8 +1,7 @@
 import React from 'react';
-import BlogPage from '../pages/BlogPage';
-import { useRecoilValue } from 'recoil';
 
 import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
 
 import { themeState } from '../atoms/themeAtom.js';
 
