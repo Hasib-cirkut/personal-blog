@@ -62,7 +62,7 @@ const BlogPage = () => {
 	}, []);
 
 	return (
-		<div className={'md:pt-32 pt-8 ' + (theme === 'light' ? `text-black` : 'text-gray-500 bg-gray-900')}>
+		<div className={'md:pt-32 pt-8 ' + (theme === 'light' ? `text-black` : 'text-gray-400 bg-gray-900')}>
 			<div className="md:mx-64 flex flex-col mx-4 pb-8">
 				<Nav />
 				<div className="md:pt-24 md:px-24 font-mono">

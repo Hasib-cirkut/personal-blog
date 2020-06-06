@@ -604,6 +604,13 @@ pre {
   --border-opacity: 1;
   border-color: #d53f8c;
   border-color: rgba(213, 63, 140, var(--border-opacity));
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+}
+
+code {
+  font-weight: 600;
 }
 
 ul {
