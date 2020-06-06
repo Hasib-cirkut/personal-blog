@@ -40,7 +40,7 @@ export const Nav = () => {
 
 			<div className="flex flex-row w-full justify-around cursor-pointer">
 				<p>About</p>
-				<Link to="">
+				<Link>
 					<p className={theme === 'light' ? 'text-black' : 'text-white'} onClick={toogleTheme}>
 						{theme === 'light' ? 'Dark' : 'Light'}
 					</p>
