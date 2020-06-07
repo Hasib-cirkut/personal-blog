@@ -28,11 +28,11 @@ export const Nav = () => {
 		>
 			<div className="flex flex-row w-full justify-around">
 				<Link to="/">
-					<p>Home</p>
+					<p className="hover:text-yellow-400 transition duration-500 ease-in-out">Home</p>
 				</Link>
 
 				<Link to="/blogs">
-					<p className="">Blogs</p>
+					<p className="hover:text-yellow-400 transition duration-500 ease-in-out">Blogs</p>
 				</Link>
 			</div>
 

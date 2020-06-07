@@ -13,7 +13,10 @@ function LandingPage() {
 			<div className={'md:mx-64 flex flex-col mx-4'}>
 				<Nav />
 
-				<div className={'flex flex-row justify-center mt-24'}>
+				<div className="flex flex-row justify-center mt-24 text-lg font-normal">
+					<p>find me on</p>
+				</div>
+				<div className={'flex flex-row justify-center mt-4 py-2 rounded-sm bg-gray-100 mx-4 md:mx-48'}>
 					<a href="https://www.facebook.com/adib.hasib.7">
 						<img src="/icon_facebook.png" alt="icon facebook" className="h-8 w-8 rounded-full mx-12" />
 					</a>
@@ -36,8 +39,8 @@ function LandingPage() {
 					</p>
 				</div>
 
-				<div className="flex flex-row justify-center mt-12 text-xl font-semibold">
-					<p>Popular Tags</p>
+				<div className="flex flex-row justify-center mt-12 text-xl text-center font-hairline">
+					<p>{'¯\\_(ツ)_/¯'}</p>
 				</div>
 			</div>
 		</div>
