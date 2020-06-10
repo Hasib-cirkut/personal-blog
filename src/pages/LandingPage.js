@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav } from '../components/Nav';
+import Typing from 'react-typing-animation';
 
 import { useRecoilValue } from 'recoil';
 
@@ -35,7 +36,7 @@ function LandingPage() {
 				</div>
 
 				<div className="flex flex-row justify-center mt-20 text-5xl">
-					<h1>Hi</h1>
+					<h1>Hello</h1>
 				</div>
 
 				<div className="flex flex-row justify-center mt-6 text-lg md:mx-64 md:px-24 text-center font-light tracking-tight">
