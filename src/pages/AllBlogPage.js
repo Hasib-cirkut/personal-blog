@@ -32,7 +32,7 @@ const AllBlogPage = () => {
 	);
 
 	return (
-		<div className={'h-screen md:pt-32 pt-8 ' + (theme === 'light' ? `text-black` : 'text-white bg-gray-900')}>
+		<div className={' md:pt-32 pt-8 ' + (theme === 'light' ? `text-black` : 'text-white bg-gray-900')}>
 			<div className="md:mx-64 flex flex-col mx-4">
 				<Nav />
 
