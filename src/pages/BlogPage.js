@@ -30,8 +30,6 @@ function getMarkdown(body) {
 	md = md.replace(/\bscanf\b/g, `<span style="color:DeepPink">scanf</span>`);
 	md = md.replace(/\bmain\b/g, `<span style="color:DeepPink">main</span>`);
 
-	console.log(md);
-
 	return { __html: md };
 }
 
@@ -49,8 +47,6 @@ const BlogPage = () => {
 			let client = await Contentful();
 
 			let entry = await client.getEntry(id);
-
-			console.log(entry);
 
 			setTitle(entry.fields.title);
 			setSubTitle(entry.fields.subtitle);

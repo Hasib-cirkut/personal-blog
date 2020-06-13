@@ -607,6 +607,7 @@ pre {
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
+  overflow: auto;
 }
 
 code {

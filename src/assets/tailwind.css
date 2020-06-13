@@ -19,6 +19,7 @@ pre {
 	@apply border-l-4;
 	@apply border-pink-600;
 	@apply text-gray-900;
+	@apply overflow-auto;
 }
 
 code {
